@@ -2,7 +2,6 @@
 #include <iostream>
 #include <string>
 
-
 using namespace std;
 
 struct var { int arr[100]{ 0 }, number = 0; short arrLen = 0; };
@@ -13,7 +12,7 @@ int readPositiveNumber() {
     cout << "Enter a number: ";
     do
         cin >> number;
-    while (number <= 0 || number > 100 || !(cin));
+    while (number <= 0 || !(cin));
 
     return number;
 }
