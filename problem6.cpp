@@ -21,7 +21,7 @@ int ReadPositiveNumber(string msg) {
 void fillArray(int arr[100], int& arrLen) {
 
     for (int c = 0; c <= (arrLen - 1); c++) {
-        cout << "Enter a number of [" << (c + 1)   << "] =  ";
+        cout << "Enter a number of [" << (c + 1) << "] =  ";
         cin >> arr[c];
     }    
 
@@ -30,7 +30,7 @@ void fillArray(int arr[100], int& arrLen) {
 bool isPalindrum(int arr[100], int arrLen) {
 
     for (int c = 0; c <= (arrLen - 1); c++)
-        if ((arr[c] != arr[arrLen - c - 1]))
+        if ((arr[c] != arr[arrLen - (c - 1)]))
             return false;
     return true;
 }
